@@ -5,16 +5,19 @@ class Pilha():
         self.items = []
 
     def push(self, element):
-        pass
+        self.items.append(element)
 
     def pop(self):
-        pass
+        self.items.pop()
 
     def size(self):
-        pass
+        return len(self.items)
 
     def isEmpty(self):
-        pass
+        if(len(self.items) == 0):
+            return True
+        return False
 
-    def clear(self):
-        pass
+    def clean(self):
+        self.items.clear()
+     
