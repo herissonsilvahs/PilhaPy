@@ -20,4 +20,7 @@ class Pilha():
 
     def clean(self):
         self.items.clear()
-     
+
+    def printStack(self):
+        for item in self.items:
+            print(str(item)) # Show in string anything element
